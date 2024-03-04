@@ -11,7 +11,7 @@ import Project from "./components/Projects/Project";
 function App() {
   return (
     <AnimatePresence>
-      <div className="overflow-x-hidden font-kalam relative">
+      <div className="overflow-x-hidden font-kalam ">
         <Navbar />
         <Home />
         <AboutMe />

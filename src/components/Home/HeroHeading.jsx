@@ -5,12 +5,9 @@ export const HeroHeading = () => {
   const skills = ["Machine Learning", "Deep Learning", "NLP"];
 
   return (
-    <div className="flex items-center justify-center md:min-h-[80vh] min-h-[65vh] flex-col gap-5  mb-10 text-center ">
-      <div className="h-1 relative">
-        {" "}
-        <ParticlesContainer />
-      </div>
-
+    <div className="flex items-center justify-center md:min-h-[80vh] min-h-[65vh] flex-col gap-5 relative md:mb-20 mb-8 text-center ">
+      {" "}
+      <ParticlesContainer />
       <motion.h1
         className="md:text-[6rem] text-6xl "
         initial={{ opacity: 0 }}
@@ -19,7 +16,6 @@ export const HeroHeading = () => {
       >
         Haggra Nigga
       </motion.h1>
-
       <motion.div
         className="flex  gap-3 mb-3 md:gap-5 md:tracking-wider"
         initial={{ opacity: 0 }}
@@ -42,7 +38,6 @@ export const HeroHeading = () => {
           );
         })}
       </motion.div>
-
       <motion.a
         className="bg-blue-600 p-3 px-9 rounded-md z-20 text-xl text-white font-semibold tracking-wide
         hover:text-black transition ease-in-out delay-250 duration-500 shadow-[0_10px_36px_rgba(0,0,0,0.5)] cursor-pointer  "
@@ -52,8 +47,7 @@ export const HeroHeading = () => {
       >
         Resume
       </motion.a>
-
-      <motion.div className="home__links flex gap-10 justify-center items-center absolute bottom-20   text-3xl">
+      <motion.div className="home__links flex gap-10 justify-center items-center absolute bottom-0   text-3xl">
         <motion.a
           href="#"
           target="_blank"
