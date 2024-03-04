@@ -3,7 +3,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdClose } from "react-icons/md";
 import { motion } from "framer-motion";
 
-
 const Navbar = () => {
   const links = ["Home", "About", "Skills", "Project", "Contact"];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,8 +16,12 @@ const Navbar = () => {
     }, 150);
   };
   return (
-    <motion.div className="h-[80px] bg-white px-[5em] flex justify-between items-center z-50 shadow-sm sticky top-0"
-    initial={{opacity:0, y:'-100vh'}} animate={{opacity:1, y:0 }} transition={{delay:0.5, duration:0.8}}>
+    <motion.div
+      className="h-[80px] bg-white px-[5em] flex justify-between items-center z-50 shadow-sm fixed top-0 w-full"
+      initial={{ opacity: 0, y: "-100vh" }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
+    >
       <div className="uppercase text-[2rem] font-bold">
         <a href="#">Niggero</a>
       </div>

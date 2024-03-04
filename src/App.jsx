@@ -11,12 +11,12 @@ import Project from "./components/Projects/Project";
 function App() {
   return (
     <AnimatePresence>
-      <div className="overflow-x-hidden font-kalam">
+      <div className="overflow-x-hidden font-kalam relative">
         <Navbar />
         <Home />
         <AboutMe />
         <Skills />
-        <Project/>
+        <Project />
         <Contact />
         <Footer />
       </div>
