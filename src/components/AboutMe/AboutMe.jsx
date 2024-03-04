@@ -1,4 +1,4 @@
-import img from "./davai.jpeg";
+import img from "./shin-chan-crayon-shin-chan.gif";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
